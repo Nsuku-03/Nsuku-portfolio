@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="mini-music-player" id="musicPlayer">
+
+  
+  <div class="music-player-header" id="musicHeader">
+
+    <span>🎵 Music Player</span>
+
+    <button id="minimizeMusic" title="Minimize">
+      −
+    </button>
+
+  </div>
+
+ 
+  <div id="musicContent">
+
+    <div class="mini-song-info">
+
+      <span class="mini-music-icon">🎵</span>
+
+      <div>
+        <strong id="songTitle">Magwala a Cheche</strong>
+
+        <small id="songArtist">
+          Kaycherlow NLL feat Shebeshxt
+        </small>
+      </div>
+
+    </div>
+
+
+    <audio id="audioPlayer">
+      <source
+        src="music/magwala-a-cheche.mp3"
+        type="audio/mpeg"
+      >
+      Your browser does not support audio.
+    </audio>
+
+
+    
+    <div class="mini-controls">
+
+      <button id="prevBtn" title="Previous Song">
+        ⏮
+      </button>
+
+      <button id="playBtn" class="mini-play" title="Play">
+        ▶
+      </button>
+
+      <button id="nextBtn" title="Next Song">
+        ⏭
+      </button>
+
+    </div>
+
+
+    
+    <div class="mini-progress">
+
+      <span id="currentTime">0:00</span>
+
+      <input
+        type="range"
+        id="progressBar"
+        value="0"
+        min="0"
+        max="100"
+      >
+
+      <span id="duration">0:00</span>
+
+    </div>
+
+
+    
+    <div class="mini-volume">
+
+      🔊
+
+      <input
+        type="range"
+        id="volumeBar"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.7"
+      >
+
+    </div>
+
+  </div>
+
+</div> 
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">My Portfolio</a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="icon-btn" id="themeBtn">🌙 Dark Mode</button>
+
+    
+    <div id="clock" class="clock">⏱️Clock⏱️</div>
+  </div>
+</header>
+
+<main>
+
+
+<section class="container hero">
+  <div class="placeholder profile-img">
+    <img src="prophoto.jpg" alt="A photo of me">
+  </div>
+
+  <div>
+    <span class="badge">Welcome to my profile</span>
+
+    <h1>Nsuku Mahwhayi</h1>
+
+    <p>
+     I am a recently qualified Information and Communication Technology (ICT) graduate with
+     a solid foundation in software development and database technologies👩‍💻, equipped 
+     with practical skills in Java programming, SQL database management, Oracle APEX,
+     Java Swing, HTML, and CSS. Through academic projects and hands-on coursework, 
+     I have designed, built, and tested software solutions that address real business needs, 
+     demonstrating strong problem-solving abilities, attention to detail, and a commitment to writing clean, 
+     maintainable code👩‍💻. I am eager to contribute to an entry-level IT or software development role 
+     where I can apply my technical expertise to build meaningful, reliable systems while continuously 
+     learning from experienced professionals and growing into a well-rounded developer. My goal is to join a 
+     forward-thinking organisation where I can add immediate value, collaborate effectively within a team and 
+     build a long-term career delivering high-quality software solutions. 
+    </p>
+
+    <a class="btn" href="about.html">Learn More About Me</a>
+  </div>
+</section>
+
+
+<section class="container section">
+  <h2 class="section-title">Personal Information</h2>
+
+  <table class="info-table">
+    <tr>
+      <th>Full Name</th>
+      <td>Nsuku Mahwhayi</td>
+    </tr>
+
+    <tr>
+      <th>Hometown🏠</th>
+      <td>Giyani</td>
+    </tr>
+
+    <tr>
+      <th>Programme of Study</th>
+      <td>
+        Advance Diploma in Information and Communication Technology
+      </td>
+    </tr>
+
+    <tr>
+      <th>Career Goal</th>
+      <td>
+       My career goal is to become a professional software developer or 
+       IT specialist, progressing into roles such as Software Developer or 
+       Software Engineer👩‍💻. I aspire to work in a dynamic, 
+       innovation-driven environment where I can design, build and 
+       maintain secure, reliable and user-friendly systems that solve 
+       real-world problems and make a positive difference in people’s lives. 
+       I am particularly motivated by opportunities to work with modern technologies, 
+       collaborate with cross-functional teams and contribute to solutions that improve efficiency, 
+       accessibility and overall user experience.
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="container section">
+  <h2 class="section-title">Profile Highlights</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>🎓 Education</h3>
+      <p>
+        I am focused on developing my academic and practical skills.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>💻 Interests</h3>
+      <p>
+        I enjoy technology, learning new skills and working on creative projects.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🚀 Future</h3>
+      <p>
+        My goal is to grow professionally and make a positive impact in my career.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="container section">
+
+  <div class="music-player">
+
+    <h2 class="section-title">🎵 My Music Player</h2>
+
+    <p class="music-subtitle">
+      Enjoy some music while exploring my portfolio.
+    </p>
+
+    <div class="song-info">
+
+      <div class="music-icon">
+        🎶
+      </div>
+
+      <div>
+        <h3 id="songTitle">magwala a Cheche</h3>
+
+        <p id="songArtist">
+          Kaycherlow NLL feat Shebeshxt, Cliff Kayden, Naqua SA & Inkreys
+        </p>
+      </div>
+
+    </div>
+
+
+    <audio id="audioPlayer">
+      <source src="music/magwala-a-cheche.mp3"
+        type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+
+
+    <div class="progress-area">
+
+      <span id="currentTime">0:00</span>
+
+      <input
+        type="range"
+        id="progressBar"
+        value="0"
+        min="0"
+        max="100"
+      >
+
+      <span id="duration">0:00</span>
+
+    </div>
+
+    <div class="music-controls">
+
+      <button
+        id="prevBtn"
+        class="music-btn"
+        title="Previous Song"
+      >
+        ⏮
+      </button>
+
+      <button
+        id="playBtn"
+        class="play-btn"
+        title="Play Music"
+      >
+        ▶
+      </button>
+
+      <button
+        id="nextBtn"
+        class="music-btn"
+        title="Next Song"
+      >
+        ⏭
+      </button>
+
+    </div>
+
+    <div class="volume-control">
+
+      🔊
+
+      <input
+        type="range"
+        id="volumeBar"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.7"
+      >
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

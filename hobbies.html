@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies | My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="mini-music-player" id="musicPlayer">
+
+
+  <div class="music-player-header" id="musicHeader">
+
+    <span>🎵 Music Player</span>
+
+    <button id="minimizeMusic" title="Minimize">
+      −
+    </button>
+
+  </div>
+
+
+  <div id="musicContent">
+
+    <div class="mini-song-info">
+
+      <span class="mini-music-icon">🎵</span>
+
+      <div>
+        <strong id="songTitle">Magwala a Cheche</strong>
+
+        <small id="songArtist">
+          Kaycherlow NLL feat Shebeshxt
+        </small>
+      </div>
+
+    </div>
+
+
+    <audio id="audioPlayer">
+      <source
+        src="music/magwala-a-cheche.mp3"
+        type="audio/mpeg"
+      >
+      Your browser does not support audio.
+    </audio>
+
+    <div class="mini-controls">
+
+      <button id="prevBtn" title="Previous Song">
+        ⏮
+      </button>
+
+      <button id="playBtn" class="mini-play" title="Play">
+        ▶
+      </button>
+
+      <button id="nextBtn" title="Next Song">
+        ⏭
+      </button>
+
+    </div>
+
+
+    <div class="mini-progress">
+
+      <span id="currentTime">0:00</span>
+
+      <input
+        type="range"
+        id="progressBar"
+        value="0"
+        min="0"
+        max="100"
+      >
+
+      <span id="duration">0:00</span>
+
+    </div>
+
+
+    <!-- Volume -->
+    <div class="mini-volume">
+
+      🔊
+
+      <input
+        type="range"
+        id="volumeBar"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.7"
+      >
+
+    </div>
+
+  </div>
+
+</div> 
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">My Portfolio</a>
+    <nav>
+      <ul><li><a href="index.html" class="">Home</a></li>
+<li><a href="about.html" class="">About Me</a></li>
+<li><a href="family.html" class="">Family</a></li>
+<li><a href="hobbies.html" class="active">Hobbies</a></li>
+<li><a href="gallery.html" class="">Gallery</a></li>
+<li><a href="contact.html" class="">Contact</a></li></ul>
+    </nav>
+    <button class="icon-btn" id="themeBtn">🌙 Dark Mode</button>
+     
+    <div id="clock" class="clock"></div>
+  </div>
+  
+  </div>
+</header>
+
+<main>
+
+<section class="container section">
+  <h1 class="section-title">My Hobbies</h1>
+  <p>In my free time, I enjoy activities that help me relax, learn and stay active.</p>
+  <div class="grid">
+    <div class="card"><h3>🎵 Music</h3><p>I enjoy listening to music because it helps me relax and improves my mood🎶🎵.</p></div>
+    <div class="card"><h3>⚽ Sport</h3><p>I enjoy watching or taking part in sport and staying active⚾🏀.</p></div>
+    <div class="card"><h3>💻 Technology</h3><p>I like exploring computers, websites and new digital tools👩‍💻.</p></div>
+    <div class="card"><h3>🎬 Movies</h3><p>I enjoy watching interesting movies and series during my free time📺.</p></div>
+    <div class="card"><h3>📚 Learning</h3><p>I enjoy learning new things that can help me academically and professionally.</p></div>
+    <div class="card"><h3>👥 Socialising</h3><p>I value spending time with friends and people who are important to me👥.</p></div>
+  </div>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

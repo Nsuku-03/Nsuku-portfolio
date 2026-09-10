@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="mini-music-player" id="musicPlayer">
+
+  <div class="music-player-header" id="musicHeader">
+
+    <span>🎵 Music Player</span>
+
+    <button id="minimizeMusic" title="Minimize">
+      −
+    </button>
+
+  </div>
+
+  <div id="musicContent">
+
+    <div class="mini-song-info">
+
+      <span class="mini-music-icon">🎵</span>
+
+      <div>
+        <strong id="songTitle">Magwala a Cheche</strong>
+
+        <small id="songArtist">
+          Kaycherlow NLL feat Shebeshxt
+        </small>
+      </div>
+
+    </div>
+
+
+    <audio id="audioPlayer">
+      <source
+        src="music/magwala-a-cheche.mp3"
+        type="audio/mpeg"
+      >
+      Your browser does not support audio.
+    </audio>
+
+    <div class="mini-controls">
+
+      <button id="prevBtn" title="Previous Song">
+        ⏮
+      </button>
+
+      <button id="playBtn" class="mini-play" title="Play">
+        ▶
+      </button>
+
+      <button id="nextBtn" title="Next Song">
+        ⏭
+      </button>
+
+    </div>
+
+    <div class="mini-progress">
+
+      <span id="currentTime">0:00</span>
+
+      <input
+        type="range"
+        id="progressBar"
+        value="0"
+        min="0"
+        max="100"
+      >
+
+      <span id="duration">0:00</span>
+
+    </div>
+
+    <div class="mini-volume">
+
+      🔊
+
+      <input
+        type="range"
+        id="volumeBar"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.7"
+      >
+
+    </div>
+
+  </div>
+
+</div> 
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">My Portfolio</a>
+    <nav>
+      <ul><li><a href="index.html" class="">Home</a></li>
+<li><a href="about.html" class="active">About Me</a></li>
+<li><a href="family.html" class="">Family</a></li>
+<li><a href="hobbies.html" class="">Hobbies</a></li>
+<li><a href="gallery.html" class="">Gallery</a></li>
+<li><a href="contact.html" class="">Contact</a></li></ul>
+    </nav>
+    <button class="icon-btn" id="themeBtn">🌙 Dark Mode</button>
+
+    <div id="clock" class="clock"></div>
+  </div>
+  
+  </div>
+</header>
+
+<main>
+
+<section class="container section">
+  <h1 class="section-title">About Me</h1>
+  <div class="card">
+    <p>
+      My name is <strong>Nsuku Mahwhayi</strong>. A hardworking and curious Information and Communication Technology student from
+      <strong>Giyani, Limpopo, South Africa. </strong> currently completing <strong>Advance Diploma in Information and Communication Technology in Application Development</strong> at <strong>Walter Sisulu University</strong> 
+      which is based in <strong>East London, Eastern Cape, South Africa</strong>.
+
+    </p>
+    <p>
+      I am passionate about technology and committed to continuous learning, always seeking opportunities to expand my knowledge and strengthen my practical skills.
+      I approach every task with dedication, attention to detail, and a willingness to take on new challenges😊.
+
+    </p>
+    <button class="btn" id="toggleBtn">Show More About Me</button>
+    <div id="extraInfo" class="hidden">
+      <p>
+        I enjoy meeting new people🫂, acquiring useful skills, and pushing myself out of my comfort zone through new experiences that help me grow.
+      My long-term goal is to build a successful career in the technology👩‍💻 industry where I can make a meaningful contribution while continuing to develop both personally and professionally. 
+      I am eager to join a dynamic team where I can add value, learn from experienced professionals🫂, and progress toward becoming a skilled and impactful ICT practitioner👩‍💻.
+      </p>
+      <p>
+        With a strong foundation in software development, database management, and problem-solving,
+        I am confident in my ability to adapt quickly to new tools, technologies, and work environments. I thrive in collaborative settings where innovation and teamwork drive results, and
+        I am motivated by opportunities to solve real-world problems through technology. 
+        I am now ready to transition from academia into the professional world, bringing enthusiasm, reliability, and a growth mindset to every project I undertake💻.
+      </p>
+      <h3>My Strengths</h3>
+      <ul class="list-clean">
+        <li>Good communication</li>
+        <li>Problem-solving</li>
+        <li>Teamwork</li>
+        <li>Willingness to learn</li>
+        <li>Responsibility and time management</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2 class="section-title">My Goals</h2>
+  <div class="grid">
+    <div class="card"><h3>Short-Term</h3><p>Successfully complete my Advanced Diploma in ICT while strengthening my practical skills in software development, database management, and emerging technologies🖥️👩‍💻. I aim to build a strong portfolio of projects that demonstrate my technical abilities and readiness for the workplace.</p></div>
+    <div class="card"><h3>Career</h3><p>Secure an entry-level IT or software development role in a professional environment where I can learn from experienced practitioners, contribute meaningfully to team objectives, and grow into a competent and versatile technology professional🖥️. I am particularly interested in opportunities that offer mentorship, exposure to real-world systems, and a clear path for career progression.</p></div>
+    <div class="card"><h3>Personal</h3><p>Continuously improve my confidence, technical knowledge👩‍💻, and leadership abilities by taking on new challenges, seeking feedback, and staying curious about industry trends. I am committed to developing strong communication and teamwork skills👥, building a professional network, and maintaining a mindset of lifelong learning that supports both my personal growth😊 and professional success.</p></div>
+  </div>
+</section>
+
+</main>
+<footer>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

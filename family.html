@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family | My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+<div class="mini-music-player" id="musicPlayer">
+
+  
+  <div class="music-player-header" id="musicHeader">
+
+    <span>🎵 Music Player</span>
+
+    <button id="minimizeMusic" title="Minimize">
+      −
+    </button>
+
+  </div>
+
+ 
+  <div id="musicContent">
+
+    <div class="mini-song-info">
+
+      <span class="mini-music-icon">🎵</span>
+
+      <div>
+        <strong id="songTitle">Magwala a Cheche</strong>
+
+        <small id="songArtist">
+          Kaycherlow NLL feat Shebeshxt
+        </small>
+      </div>
+
+    </div>
+
+
+    <audio id="audioPlayer">
+      <source
+        src="music/magwala-a-cheche.mp3"
+        type="audio/mpeg"
+      >
+      Your browser does not support audio.
+    </audio>
+
+
+    
+    <div class="mini-controls">
+
+      <button id="prevBtn" title="Previous Song">
+        ⏮
+      </button>
+
+      <button id="playBtn" class="mini-play" title="Play">
+        ▶
+      </button>
+
+      <button id="nextBtn" title="Next Song">
+        ⏭
+      </button>
+
+    </div>
+
+
+    
+    <div class="mini-progress">
+
+      <span id="currentTime">0:00</span>
+
+      <input
+        type="range"
+        id="progressBar"
+        value="0"
+        min="0"
+        max="100"
+      >
+
+      <span id="duration">0:00</span>
+
+    </div>
+
+
+  
+    <div class="mini-volume">
+
+      🔊
+
+      <input
+        type="range"
+        id="volumeBar"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.7"
+      >
+
+    </div>
+
+  </div>
+
+</div> 
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">My Portfolio</a>
+    <nav>
+      <ul><li><a href="index.html" class="">Home</a></li>
+<li><a href="about.html" class="">About Me</a></li>
+<li><a href="family.html" class="active">Family</a></li>
+<li><a href="hobbies.html" class="">Hobbies</a></li>
+<li><a href="gallery.html" class="">Gallery</a></li>
+<li><a href="contact.html" class="">Contact</a></li></ul>
+    </nav>
+    <button class="icon-btn" id="themeBtn">🌙 Dark Mode</button>
+    
+    <div id="clock" class="clock"></div>
+  </div>
+  
+  </div>
+</header>
+
+<main>
+
+<section class="container section">
+  <h1 class="section-title">My Family</h1>
+  <div class="card">
+    <p>
+      Family is an important part of my life👨‍👩‍👧‍👦. They motivate me to work hard,
+      stay focused and become the best version of myself.
+      Whenever I face challenges in my studies or feel overwhelmed with 
+        assignments, my family reminds me why I started this journey in the first place. Their unwavering 
+        belief in my potential pushes me to keep going, even when things get difficult. They celebrate my 
+        successes, no matter how small, and provide comfort during my failures. My family has taught me the 
+        value of perseverance, integrity, and compassion. They are my constant source of strength and 
+        inspiration, reminding me that with hard work and dedication, I can achieve my dreams. Every late 
+        night of coding, every research project, and every exam I prepare for is not just for me, but for 
+        them as well. Their sacrifices and support have shaped who I am today, and I am determined to make 
+        them proud by succeeding in my Information Technology studies and building a meaningful career in 
+        software development and fraud detection👑.
+    </p>
+    <h3>What I value about family👨‍👩‍👧‍👦</h3>
+    <ul class="list-clean">
+      <li>Support and encouragement</li>
+      <li>Respect for one another</li>
+      <li>Spending quality time together</li>
+      <li>Helping each other during difficult times</li>
+    </ul>
+  </div>
+</section>
+
+<section class="container section">
+  <h2 class="section-title">Family Memories</h2>
+  <div class="gallery">
+    <div class="placeholder"><img src="myFmlphoto.jpg" alt="A photo of me"></div>
+    <div class="placeholder"><img src="hobbies.jpg" alt="A photo of me"></div>
+  </div>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gallery | My Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="mini-music-player" id="musicPlayer">
+
+ 
+  <div class="music-player-header" id="musicHeader">
+
+    <span>🎵 Music Player</span>
+
+    <button id="minimizeMusic" title="Minimize">
+      −
+    </button>
+
+  </div>
+
+  <div id="musicContent">
+
+    <div class="mini-song-info">
+
+      <span class="mini-music-icon">🎵</span>
+
+      <div>
+        <strong id="songTitle">Magwala a Cheche</strong>
+
+        <small id="songArtist">
+          Kaycherlow NLL feat Shebeshxt
+        </small>
+      </div>
+
+    </div>
+
+
+    <audio id="audioPlayer">
+      <source
+        src="music/magwala-a-cheche.mp3"
+        type="audio/mpeg"
+      >
+      Your browser does not support audio.
+    </audio>
+
+    <div class="mini-controls">
+
+      <button id="prevBtn" title="Previous Song">
+        ⏮
+      </button>
+
+      <button id="playBtn" class="mini-play" title="Play">
+        ▶
+      </button>
+
+      <button id="nextBtn" title="Next Song">
+        ⏭
+      </button>
+
+    </div>
+
+    <div class="mini-progress">
+
+      <span id="currentTime">0:00</span>
+
+      <input
+        type="range"
+        id="progressBar"
+        value="0"
+        min="0"
+        max="100"
+      >
+
+      <span id="duration">0:00</span>
+
+    </div>
+
+
+    <div class="mini-volume">
+
+      🔊
+
+      <input
+        type="range"
+        id="volumeBar"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.7"
+      >
+
+    </div>
+
+  </div>
+
+</div> 
+
+<body>
+
+<header>
+
+  <div class="container nav">
+
+    <a class="brand" href="index.html">
+      My Portfolio
+    </a>
+
+    <nav>
+      <ul>
+
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="about.html">About Me</a>
+        </li>
+
+        <li>
+          <a href="family.html">Family</a>
+        </li>
+
+        <li>
+          <a href="hobbies.html">Hobbies</a>
+        </li>
+
+        <li>
+          <a href="gallery.html" class="active">Gallery</a>
+        </li>
+
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <button class="icon-btn" id="themeBtn">
+      🌙 Dark Mode
+    </button>
+  
+    <div id="clock" class="clock"></div>
+  </div>
+
+  </div>
+
+</header>
+
+
+<main>
+
+<section class="container section">
+
+  <h1 class="section-title">
+    My Gallery
+  </h1>
+
+  <p>
+    Every image here represents a unique moment, mood, and creativity.
+  </p>
+
+
+
+
+  <div class="slideshow-container">
+
+    
+    <img
+      id="slideImage"
+      src="prophoto.jpg"
+      alt="My gallery photo"
+    >
+
+
+    <button
+      class="prev"
+      onclick="plusSlides(-1)">
+      ❮
+    </button>
+
+
+    
+    <button
+      class="next"
+      onclick="plusSlides(1)">
+      ❯
+    </button>
+
+  </div>
+
+
+  
+
+  <div class="dots">
+
+    <span
+      class="dot active"
+      onclick="currentSlide(1)">
+    </span>
+
+    <span
+      class="dot"
+      onclick="currentSlide(2)">
+    </span>
+
+    <span
+      class="dot"
+      onclick="currentSlide(3)">
+    </span>
+
+    <span
+      class="dot"
+      onclick="currentSlide(4)">
+    </span>
+
+  </div>
+
+
+  <section class="container section">
+  <h2 class="section-title">My Videos</h2>
+  <div class="video-gallery">
+    <div class="card">
+      <video width="640" height="360" controls>
+        <source src="videos/myvideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p class="caption">My Video</p>
+    </div>
+
+    <div class="card">
+      <video width="640" height="360" controls>
+        <source src="videos/myvideo1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p class="caption">Affluent Aunts</p>
+    </div>
+
+    <div class="card">
+      <video width="640" height="360" controls>
+        <source src="videos/myvideo2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p class="caption">My BBeautiful pal</p>
+    </div>
+  </div>
+</section>
+
+</section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

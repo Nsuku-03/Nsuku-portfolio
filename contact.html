@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">My Portfolio</a>
+    <nav>
+      <ul><li><a href="index.html" class="">Home</a></li>
+<li><a href="about.html" class="">About Me</a></li>
+<li><a href="family.html" class="">Family</a></li>
+<li><a href="hobbies.html" class="">Hobbies</a></li>
+<li><a href="gallery.html" class="">Gallery</a></li>
+<li><a href="contact.html" class="active">Contact</a></li></ul>
+    </nav>
+    <button class="icon-btn" id="themeBtn">🌙 Dark Mode</button>
+     <!-- Digital Clock -->
+    <div id="clock" class="clock"></div>
+  </div>
+  
+  </div>
+</header>
+
+<main>
+
+<section class="container section">
+  <h1 class="section-title">Contact Me</h1>
+  <div class="grid" style="grid-template-columns:1fr 2fr;">
+    <div class="card">
+      <h3>Contact Details</h3>
+      <p><strong>Email:</strong><br><a href="mailto:yourname@.com">nsukugoldmahwayi@gmail.com</a></p>
+      <p><strong>Phone:</strong><br>0764360305</p>
+      <p><strong>Location:</strong>East London, Eastern Cape, South Africa<br></p>
+      <h3>Social Links🤳</h3>
+      <p><a href="https://www.linkedin.com/" target="_blank">LinkedIn💌</a></p>
+      <p><a href="https://www.instagram.com/" target="_blank">Instagram📸</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Send Me a Message</h3>
+      <form id="contactForm">
+        <label for="name">Full Name🖋️</label>
+        <input id="name" type="text" placeholder="Enter your name">
+
+        <label for="email">Email Address✉️</label>
+        <input id="email" type="email" placeholder="Enter your email">
+
+        <label for="message">Message💬</label>
+        <textarea id="message" placeholder="Type your message"></textarea>
+
+        <button class="btn" type="submit">Send Message📩</button>
+      </form>
+      <div class="message" id="formMessage"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
